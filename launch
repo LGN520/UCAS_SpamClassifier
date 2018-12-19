@@ -1,0 +1,10 @@
+#/usr/bin/env bash
+
+mainDirPath=$(cd $(dirname ${BASH_SOURCE[0]}); pwd)
+
+# change path of python virtual env
+activatePath=${mainDirPath}"/spamenv/bin/activate"
+source ${activatePath}
+
+# start django server
+python ${mainDirPath}"/project/OfflineDemo/SpamClassifierVisualization/manage.py" runserver

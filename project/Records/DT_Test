@@ -1,0 +1,19 @@
+2018-12-06 10:07:18 WARN  Utils:66 - Your hostname, ict-RH2288H-V3 resolves to a loopback address: 127.0.1.1; using 172.16.112.8 instead (on interface enp2s0f3)
+2018-12-06 10:07:18 WARN  Utils:66 - Set SPARK_LOCAL_IP if you need to bind to another address
+2018-12-06 10:07:18 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+
+Start to init SpamClassifier...
+Load split tokenized labeled dataset...
+Load tf model, idf model for each fold...
+Load success!
+Init success!
+
+Start to test!
+Compute precision, recall and F1 first...
+The precision list for each model: [0.989286175293662, 0.9886652335352746, 0.9865724381625441, 0.9890999282031199, 0.9894025095897536]	Average precision: 0.9886052569568708
+The recall list for each model: [0.9542426694888875, 0.9525513086047825, 0.9526645573546746, 0.9534415502705423, 0.9516603089237696]	Average recall: 0.9529120789285311
+The F1 list for each model: [0.9714484900339069, 0.9702723436900652, 0.9693220552960485, 0.970943456671472, 0.9701644778783629]	Average F1: 0.9704301647139711
+Computing average prediction time...
+Predicting all of the unlabel dataset to get prediction time...
+Test count: 100
+The average prediction time is: 1.416963860988617 s
